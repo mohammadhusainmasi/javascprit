@@ -1,5 +1,13 @@
-let marks = {
-    stu1 : 97,
-    stu2 : 80,
-}
+console.log("hello");
 
+"abc".toUpperCase()
+"xyz".toUpperCase
+
+[1, 2, 3].push(4);
+
+//modern js
+const arrowsum = (a, b) => {
+    console.log(a + b);
+};
+
+//multiplication function
