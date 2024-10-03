@@ -4,14 +4,3 @@ console.log("hello");
 "xyz".toUpperCase
 
 [1, 2, 3].push(4);
-
-//modern js
-const arrowsum = (a, b) => {
-    console.log(a + b);
-};
-
-//multiplication function
-//modern js
-const arrowum = (a, b) => {
-    console.log(a - b);
-};
