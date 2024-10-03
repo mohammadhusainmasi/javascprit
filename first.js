@@ -7,3 +7,4 @@ function myfunction() {
 
 myfunction();
 myfunction();
+myfunction();
