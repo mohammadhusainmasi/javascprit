@@ -11,3 +11,7 @@ const arrowsum = (a, b) => {
 };
 
 //multiplication function
+//modern js
+const arrowsum = (a, b) => {
+    console.log(a - b);
+};
