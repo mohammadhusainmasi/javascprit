@@ -1,6 +1,9 @@
-console.log("hello");
+function myfunction() {
+    console.log("welcome to mahertour!");
+    console.log("we are learning js!");
+    console.log("welcome to mahertour!");
+    console.log("we are learning js!");
+}
 
-"abc".toUpperCase()
-"xyz".toUpperCase
-
-[1, 2, 3].push(4);
+myfunction();
+myfunction();
