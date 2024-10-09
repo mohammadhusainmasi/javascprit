@@ -1,42 +1,36 @@
-// function myfunction(msg, n) {
-    //parameter -> input
-    // console.log(msg * n);
-// }
+function countvowels(str) {
+     let count = 0;
+     for (const char of str){
+       if(
+         char === "a" ||
+         char === "e" ||
+         char === "i" ||
+         char === "o" ||
+         char === "u"
+        ) 
+        {
+          count++;
+        } 
+     } 
 
-// myfunction("i love JS", 100); //argument
-
-//function -> 2 numbers, sum
-
-// function sum(x, y) {
-//    //local variables -> 
-//    s = x + y;
-//    console.log("before return");
-//    return s;
-//    console.log("after return");
-// }
-// let val = sum(3, 4);
-// console.log(val);
+     return count;
+} 
 
 
-// sum function
-function sum(a, b) {
-    return a + b;
-}
+const countvow = (str) => {
+    let count = 0;
+    for (const char of str){
+      if(
+        char === "a" ||
+        char === "e" ||
+        char === "i" ||
+        char === "o" ||
+        char === "u"
+       ) 
+       {
+         count++;
+       } 
+    } 
 
-const arrowSum =(a, b) => {
-    return a + b;
-};
-
-//multiplication function
-function mul(a,b) {
-    return a * b; 
-
-}
-
-const arrowMul = (a, b) => {
-    return a * b;
-};
-
-const printhello = () => {
-    console.log("hello");
+    return count;
 }
