@@ -24,11 +24,19 @@ function sum(a, b) {
 }
 
 const arrowSum =(a, b) => {
-    console.log(a + b);
+    return a + b;
 };
 
 //multiplication function
 function mul(a,b) {
     return a * b; 
+
+}
+
+const arrowMul = (a, b) => {
     return a * b;
+};
+
+const printhello = () => {
+    console.log("hello");
 }
