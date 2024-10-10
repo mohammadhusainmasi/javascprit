@@ -1,9 +1,29 @@
-let nums = [3, 4, 6, 7, 9,];
+// let nums = [40, 50, 60];
 
-let calcsquare = (num) => {
-    console.log(num * num); //num**2
-}
+//  let newArr = nums.map((val) => {
+//     return val * 2;
+// })
 
-nums.forEach(calcsquare);
+// console.log(newArr);
 
+// letcalcsquare = (num) => {
+//     console.log(nom * num);
+// };
+
+// let arr = [1, 2, 4, 5, 7, 9];
+
+// let evenArr = arr.filter ((Val) => {
+//     return Val % 2 !== 0;
+// })
+
+// console.log(evenArr);
+
+
+let arr = [1, 3, 4, 7];
+
+const output = arr.reduce((res,curr) => {
+   return res + curr;
+});
+
+console.log(output);
 
