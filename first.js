@@ -1,36 +1,9 @@
-function countvowels(str) {
-     let count = 0;
-     for (const char of str){
-       if(
-         char === "a" ||
-         char === "e" ||
-         char === "i" ||
-         char === "o" ||
-         char === "u"
-        ) 
-        {
-          count++;
-        } 
-     } 
+let nums = [3, 4, 6, 7, 9,];
 
-     return count;
-} 
-
-
-const countvow = (str) => {
-    let count = 0;
-    for (const char of str){
-      if(
-        char === "a" ||
-        char === "e" ||
-        char === "i" ||
-        char === "o" ||
-        char === "u"
-       ) 
-       {
-         count++;
-       } 
-    } 
-
-    return count;
+let calcsquare = (num) => {
+    console.log(num * num); //num**2
 }
+
+nums.forEach(calcsquare);
+
+
