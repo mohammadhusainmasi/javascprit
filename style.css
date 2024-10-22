@@ -1,14 +1,8 @@
-.heading {
-    color: blueviolet;
-    background-color: blanchedalmond;
-    text-decoration:wavy ;
-}
-
-body{
-    background-color: pink;
-}
-
-button{
-    background-color: rgb(138, 3, 138);
-    color: rgb(255, 190, 200);
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(176, 97, 139);
 }

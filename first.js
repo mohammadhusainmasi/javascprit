@@ -1,10 +1,13 @@
-// let myfirstEl = document.querySelector("p"); // 1st element
-// console.dir(myfirstEl); 
+// let h2 = document.querySelector("h2");
 
+// console.dir(h2.innerText);
 
-// console.dir(document.body.firstChild); 
+// h2.innerText = h2.innerText + "from mantiq students";
 
-let div = document.querySelector("div");
-console.dir(dir); 
+let divs = document.querySelectorAll(".box");
 
-let heading = document.querySelector("h1");
+let idx = 1;
+for (div of divs) {
+    div.innerText = `new unique value ${idx}`;
+    idx++;
+}
