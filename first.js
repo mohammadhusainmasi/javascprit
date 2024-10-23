@@ -1,13 +1,27 @@
-// let h2 = document.querySelector("h2");
+// let div = document.querySelector("div");
+// console.log(div);
 
-// console.dir(h2.innerText);
+// let id = div.getAttribute("id");
+// console.log(id);    
 
-// h2.innerText = h2.innerText + "from mantiq students";
+// let name = div.getAttribute("name");
+// console.log(name);    
 
-let divs = document.querySelectorAll(".box");
+// let para = document.querySelector ("p");
+// console.log(para.setAttribute("class","newclass"));
 
-let idx = 1;
-for (div of divs) {
-    div.innerText = `new unique value ${idx}`;
-    idx++;
-}
+// let div = document.querySelector("div");
+
+// div.style.backgroundColor = "green";
+// div.style.backgroundColor = "purple";  
+
+// div.style.fontSize = "25px";
+
+// div.innerText = "hello!";
+
+let newbtn = document.createElement("button");
+newbtn.innerText = "click me!";
+console.log(newbtn);
+
+let div = document.querySelector("div");
+div.append(newbtn);   
