@@ -1,7 +1,7 @@
-#box {
-    height: 200px;
-    width: 100px;
-    background-color: green;
-    color:bisque;
-    border: 1px solid black;
+.content {
+    color: green;
+}
+
+.newclass {
+    background-color:yellow;
 }

@@ -26,12 +26,28 @@
 // let div = document.querySelector("div");
 // div.prepend(newbtn);   
 
-let newHeading = document.createElement("h1");
-newHeading.innerHTML = "<i>Hi, I am new!</i>";
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>Hi, I am new!</i>";
 
-document.querySelector("body").prepend(newHeading);
+// document.querySelector("body").prepend(newHeading);
+
+// let para = document.querySelector("p");
+// para.remove();
+
+// newHeading.remove();
+
+// Q1
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me!";
+
+newBtn.style.color = "white";
+newBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newBtn);
+
+// Q2
 
 let para = document.querySelector("p");
-para.remove();
 
-newHeading.remove();
+
