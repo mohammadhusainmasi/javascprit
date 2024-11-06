@@ -1,53 +1,31 @@
-// let div = document.querySelector("div");
-// console.log(div);
+let btn1 = document.querySelector("#btn1");
 
-// let id = div.getAttribute("id");
-// console.log(id);    
+// btn1.onclick = (evt) => {
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientx, evt.clienty);
+// }
 
-// let name = div.getAttribute("name");
-// console.log(name);    
+btn1.addEventListener("click", (evt) => {
+    console.log("button1 was click - handler1");
+    
+}); 
 
-// let para = document.querySelector ("p"); 
-// console.log(para.setAttribute("class","newclass"));
+const handler2 = () => {
+    console.log("button was clicked - handler2");
+}
 
-// let div = document.querySelector("div");
+btn1.addEventListener("click", handler2);
 
-// div.style.backgroundColor = "green";
-// div.style.backgroundColor = "purple";  
+btn1.addEventListener("click", () => {
+    console.log("button1 was click - handler3");
+});
 
-// div.style.fontSize = "25px";
+btn1.addEventListener("click", () => {
+    console.log("button1 was click - handler4");
+});
 
-// div.innerText = "hello!";
-
-// let newbtn = document.createElement("button");
-// newbtn.innerText = "click me!";
-// console.log(newbtn);
-
-// let div = document.querySelector("div");
-// div.prepend(newbtn);   
-
-// let newHeading = document.createElement("h1");
-// newHeading.innerHTML = "<i>Hi, I am new!</i>";
-
-// document.querySelector("body").prepend(newHeading);
-
-// let para = document.querySelector("p");
-// para.remove();
-
-// newHeading.remove();
-
-// Q1
-
-let newBtn = document.createElement("button");
-newBtn.innerText = "click me!";
-
-newBtn.style.color = "white";
-newBtn.style.backgroundColor = "red";
-
-document.querySelector("body").prepend(newBtn);
-
-// Q2
-
-let para = document.querySelector("p");
+btn1.removeEventListener("click",handler2);     
 
 
