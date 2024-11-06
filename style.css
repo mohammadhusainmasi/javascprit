@@ -1,7 +1,9 @@
-div {
-    width: 100px;
-    height: 100px;
-    background-color: darkorange;
-    color: antiquewhite;
-    border: 1px solid black;
+.dark {
+    background-color: green;
+    color: yellow;
+}
+
+.light{
+    background-color: yellow;
+    color: green;
 }

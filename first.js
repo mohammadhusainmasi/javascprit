@@ -1,31 +1,17 @@
-let btn1 = document.querySelector("#btn1");
+let modebtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currmode = "light"; //dark
 
-// btn1.onclick = (evt) => {
-//     console.log(evt);
-//     console.log(evt.type);
-//     console.log(evt.target);
-//     console.log(evt.clientx, evt.clienty);
-// }
+modebtn.addEventListener("click", () => {
+    if(currmode === "light") {
+        currmode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+    } else {
+        currmode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
 
-btn1.addEventListener("click", (evt) => {
-    console.log("button1 was click - handler1");
-    
-}); 
-
-const handler2 = () => {
-    console.log("button was clicked - handler2");
-}
-
-btn1.addEventListener("click", handler2);
-
-btn1.addEventListener("click", () => {
-    console.log("button1 was click - handler3");
+    console.log(currmode);
 });
-
-btn1.addEventListener("click", () => {
-    console.log("button1 was click - handler4");
-});
-
-btn1.removeEventListener("click",handler2);     
-
-
