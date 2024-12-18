@@ -49,27 +49,102 @@
 // }
 
 
-let promise = new Promise((resolve, reject) => {
-    console.log("I am a promise");
-    reject("some error occurred");
-});
+// function asyncfunc1() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data1");
+//             resolve("success");
+//         }, 4000);
+//     });
+// }
 
-function getData(dataId, getnextdata) { 
-    return new promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("data", dataId);
-            if(getnextdata) {
-                getnextdata();
-            }
-        }, 2000);
+// function asyncfunc2() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data2");
+//             resolve("success");
+//         }, 4000);
+//     });
+// }
+
+// console.log("fetching data1....");
+// asyncfunc1().then((res) => {
+//     console.log("fetching data2....");
+//     asyncfunc2().then((res) => {
+//     })
+// })
+
+
+// const getpromise = () => {
+//    return new Promise((resolve, reject) => {
+//         console.log("I am a promise");
+//         resolve("success"); 
+//     });  
+// }
+
+// let promise = getpromise();
+// promise.then((res) => {
+//     console.log("promise fulfilled", res);
+// })
+
+// promise.catch((err) => {
+//     console.log("rejected", err);    
+// })
+
+
+function api() {
+    return new Promise((resolve, reject) => {
+        console.log("weather data");
     })
 }
 
-// //callback hell
+
+function getData(dataId) { 
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataId);
+            resolve("success"); 
+        }, 3000); 
+    })
+}
+
+//async-await
+async function getalldata(){
+    console.log("getting data1....");
+    await getData(1);
+    console.log("getting data2....");
+    await getData(2);
+    console.log("getting data3....");
+    await getData(3);
+    console.log("getting data4....");
+    await getData(4);
+    console.log("getting data5....");
+    await getData(5); 
+}
+
+ //promise chain
+
+console.log("getting data1....");
+getData(1)
+  .then((res) => {
+    console.log("getting data2....");
+    return getData(2);
+})
+  .then((res) => {
+    console.log("getting data3....");
+    return getData(3);
+})
+  .then((res) => {
+    console.log(res);
+})
+
+//callback hell
 // getData(1, () => {  
-   
+//     console.log("getting data2....");
 //     getData(2, () => {
+//       console.log("getting data3....");  
 //         getData(3, () => {
+//             console.log("getting data4....");
 //             getData(4);
 //         });
 //     })
